@@ -45,6 +45,7 @@ body {
 
 .fa-quote-left {
   font-size: 6.4rem;
+  margin-right: 1rem;
 }
 
 .quote-author {
@@ -53,6 +54,61 @@ body {
   font-size: 3.2rem;
   font-weight: 400;
   font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 4rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: royalblue;
+  outline: none;
+  padding: 0.8rem 2.9rem;
+  box-shadow: 0 0.5rem rgba(121, 121, 121, 0.65);
+
+  font-size: 2rem;
+  backface-visibility: hidden;
+}
+
+.button-container button:hover {
+  filter: brightness(125%);
+}
+
+.button-container button:active {
+  transform: translate(0, 0.5rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.button-container .twitter-button {
+  font-size: 2.5rem;
+}
+
+.loader {
+  border: 16px solid #9b7e70;
+  border-top: 16px solid #5b1e01;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 1000px) {
